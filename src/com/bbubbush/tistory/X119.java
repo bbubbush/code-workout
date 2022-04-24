@@ -5,13 +5,17 @@ import java.util.stream.Collectors;
 
 public class X119 {
   public static void main(String[] args) {
-    System.out.println("[n == 3]");
-    printArray(squareUp(2));
-    System.out.println("[n == 5]");
-    printArray(squareUp(5));
-    System.out.println("[n == 9]");
-    printArray(squareUp(9));
+    int n;
 
+    n = 3;
+    System.out.printf("[n = %d]\n", n);
+    printArray(squareUp(n));
+    n = 5;
+    System.out.printf("[n = %d]\n", n);
+    printArray(squareUp(n));
+    n = 9;
+    System.out.printf("[n = %d]\n", n);
+    printArray(squareUp(n));
   }
 
   public static int[] squareUp(int n) {
@@ -36,6 +40,7 @@ public class X119 {
     String strArr = Arrays.stream(arr)
       .mapToObj(String::valueOf)
       .collect(Collectors.joining(", "));
+
     System.out.println(strArr);
   }
 }
