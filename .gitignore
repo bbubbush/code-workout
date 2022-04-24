@@ -1,0 +1,7 @@
+### Intellij ###
+codeworkout.iml
+/.idea
+
+### Java ###
+*.class
+build/
