@@ -6,12 +6,12 @@ public class X323 {
     int high = 0;
     low = 12;
     high = 18;
-    System.out.println("[low == " + low + ", high == " + high + "]");
+    System.out.printf("[low = %d, high = %d]\n", low, high);
     System.out.println(sumRange(low, high));
 
     low = 10;
     high = 108;
-    System.out.println("[low == " + low + ", high == " + high + "]");
+    System.out.printf("[low = %d, high = %d]\n", low, high);
     System.out.println(sumRange(low, high));
   }
 
@@ -19,7 +19,6 @@ public class X323 {
     if (low > high) {
       return 0;
     }
-
     long sumOfHigh = high * (high + 1) / 2L;
     long sumOfLow = low * (low + 1) / 2L;
     return (int) (sumOfHigh - sumOfLow + low);
